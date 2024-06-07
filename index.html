@@ -23,6 +23,37 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
     <link href="pop-up/popup.css" rel="stylesheet">
+    <style>
+        .social-bx {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown-menu li {
+            display: block;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNKMVPTJ9B"></script>
 <script>
@@ -61,12 +92,21 @@
                         <p style="font-size:19px;">valedadoctor.com By Valeda Herbal Pvt. Ltd W1, Greater Kailash 1, New Delhi 110048</p>
                         </div>-->
                         <div class="wt-topbar-right clearfix">
-                        	<ul class="social-bx list-inline pull-right"><li><a href="https://www.facebook.com/Valeda-The-World-of-Holistic-Wellness-103082664629129/?ref=pages_you_manage" target="_blank"class="fa fa-facebook"></a></li>
-                           <li><a href="https://twitter.com/valedaclinic" target="_blank" class="fa fa-twitter"></a></li>
-                           <li><a href="https://www.linkedin.com/groups/13542943"  target="_blank"class="fa fa-linkedin"></a></li>
-                           <li><a href="https://www.youtube.com/channel/UCkJ2dy7qWrXKxbGBi4g-mHw" target="_blank" class="fa fa-youtube"></a></li>                           <li><a href="https://www.instagram.com/valeda_world/"  target="_blank"class="fa fa-instagram"></a></li>
+                            <ul class="social-bx list-inline pull-right">
+                                <li><a href="https://www.facebook.com/Valeda-The-World-of-Holistic-Wellness-103082664629129/?ref=pages_you_manage" target="_blank" class="fa fa-facebook"></a></li>
+                                <li><a href="https://twitter.com/valedaclinic" target="_blank" class="fa fa-twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/groups/13542943" target="_blank" class="fa fa-linkedin"></a></li>
+                                <li class="dropdown">
+                                    <a href="https://www.youtube.com/channel/UCkJ2dy7qWrXKxbGBi4g-mHw" target="_blank" class="fa fa-youtube dropdown-toggle" onclick="toggleDropdown(event)"></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://www.youtube.com/link1" target="_blank" class="fa fa-youtube"></a></li>
+                                        <li><a href="https://www.youtube.com/link2" target="_blank" class="fa fa-youtube"></a></li>
+                                        <li><a href="https://www.youtube.com/link3" target="_blank" class="fa fa-youtube"></a></li>
+                                        <li><a href="https://www.youtube.com/link4" target="_blank" class="fa fa-youtube"></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.instagram.com/valeda_world/" target="_blank" class="fa fa-instagram"></a></li>
                             </ul>
-                            
                         </div>
                     </div>
                 </div>
@@ -805,6 +845,23 @@ box-shadow:0px 5px 4px #000; vertical-align:central"><strong style=" font-size:1
             /*#endregion responsive code end*/
         });
     </script>
+
+<script>
+    function toggleDropdown(event) {
+        event.preventDefault();
+        const dropdownMenu = event.target.nextElementSibling;
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(event) {
+        const dropdowns = document.querySelectorAll('.dropdown-menu');
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(event.target) && !dropdown.previousElementSibling.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    });
+</script>
     
 
 </body>
