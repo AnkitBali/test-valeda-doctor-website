@@ -23,6 +23,26 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
     <link href="pop-up/popup.css" rel="stylesheet">
+    <style>
+        #img-responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media query for screens larger than 600px */
+        @media (min-width: 600px) {
+            #responsive-image {
+                width: 70%;
+            }
+        }
+
+        /* Media query for screens larger than 1000px */
+        @media (min-width: 1000px) {
+            #responsive-image {
+                width: 50%;
+            }
+        }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNKMVPTJ9B"></script>
 <script>
@@ -346,9 +366,9 @@ A word on Dr.Seema Bali our Medical Director, She has fellowships with American 
                 </div>
                  </div>
                  <hr>
-                 <div style="width: 80%;">
-                 <img src="images/procedures/acupuncture/Acupuncture.jpeg" class="img-responsive">
-                </div>
+                 
+                 <img alt="Acupuncture Procedure" align="center" src="images/procedures/acupuncture/Acupuncture.jpeg" id="img-responsive">
+                
                  </div>
                  </div>          
                            
