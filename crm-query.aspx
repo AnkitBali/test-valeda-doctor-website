@@ -46,12 +46,25 @@
                             </ul>
                         </div>
                         <div class="wt-topbar-right clearfix">
-                        	<ul class="social-bx list-inline pull-right"><li><a href="https://www.facebook.com/Valeda-The-World-of-Holistic-Wellness-103082664629129/?ref=pages_you_manage" target="_blank"class="fa fa-facebook"></a></li>
-                           <li><a href="https://twitter.com/valedaclinic" target="_blank" class="fa fa-twitter"></a></li>
-                           <li><a href="https://www.linkedin.com/groups/13542943"  target="_blank"class="fa fa-linkedin"></a></li>
-                           <li><a href="https://www.youtube.com/channel/UCkJ2dy7qWrXKxbGBi4g-mHw" target="_blank" class="fa fa-youtube"></a></li>                           <li><a href="https://www.instagram.com/valeda_world/"  target="_blank"class="fa fa-instagram"></a></li>
+                            <ul class="social-bx list-inline pull-right">
+                                <li><a href="https://www.facebook.com/Valeda-The-World-of-Holistic-Wellness-103082664629129/?ref=pages_you_manage" target="_blank" class="fa fa-facebook"></a></li>
+                                <li><a href="https://twitter.com/valedaclinic" target="_blank" class="fa fa-twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/groups/13542943" target="_blank" class="fa fa-linkedin"></a></li>
+                                <li class="dropdown">
+                                    <a href="https://www.youtube.com/channel/UCkJ2dy7qWrXKxbGBi4g-mHw" target="_blank" class="fa fa-youtube dropdown-toggle" onclick="toggleDropdown(event)"></a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://www.youtube.com/@valedaacnesolutions" target="_blank" class="fa fa-youtube"><text class="abc"> Acne Solutions </text></a></li>
+                                        <li><a href="https://www.youtube.com/@valedaHairfall" target="_blank" class="fa fa-youtube"><text class="abc"> Hair fall </text> </a></li>
+                                        <li><a href="https://www.youtube.com/@Electrolysisblendvaleda" target="_blank" class="fa fa-youtube"><text class="abc"> Electrolysis </text></a></li>
+                                        <li><a href="https://www.youtube.com/@valedaskinallergy" target="_blank" class="fa fa-youtube"> <text class="abc"> Skin Allergy </text> </a></li>
+                                        <li><a href="https://www.youtube.com/@valedaWhitepatches" target="_blank" class="fa fa-youtube"><text class="abc"> White Patches </text></a></li>
+
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="https://www.instagram.com/valeda_world/" target="_blank" class="fa fa-instagram"></a></li>
                             </ul>
-                            
                         </div>
                     </div>
                 </div>
@@ -335,5 +348,7 @@ box-shadow:0px 5px 10px #000;"><strong style=" font-size:15px; text-shadow: 5px 
 
 <script   src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script   src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+<script src="js/dropdown.js"></script> <!-- HEADER DROPDOWN FUCTIONS  -->
+
 </body>
 </html>

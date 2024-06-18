@@ -344,5 +344,7 @@ box-shadow:0px 5px 10px #000;"><strong style=" font-size:15px; text-shadow: 5px 
 
 <script   src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script   src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+<script src="js/dropdown.js"></script> <!-- HEADER DROPDOWN FUCTIONS  -->
+
 </body>
 </html>
