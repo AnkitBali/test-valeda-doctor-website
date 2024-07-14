@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect URLs containing uppercase letters to lowercase
+RewriteCond %{REQUEST_URI} [A-Z]
+RewriteRule ^(.*)$ /${tolower:$1} [R=301,L]
