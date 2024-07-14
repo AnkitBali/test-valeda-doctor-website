@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/Psoriasis.html",
+        "destination": "/psoriasis.html"
+      }
+    ]
+  }
+  
